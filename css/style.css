@@ -26,7 +26,7 @@ body {
 #carbis-logo .base-block{
   box-sizing: border-box;
 
-  height: 3.5em;
+  height: 3.8em;
   width: 5em;
   border-radius: .3em;
 
@@ -56,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
 
   font-weight: 700;
   text-transform: uppercase;
@@ -84,17 +84,17 @@ body {
 }
 
 #carbis-logo .beholder-text span:nth-child(1) {
-  letter-spacing: .55em;
+  letter-spacing: .4em;
 }
 
 #carbis-logo .beholder-text span:nth-child(2) {
-  font-size: 2.8em;
+  font-size: 2.5em;
   opacity: 0;
   animation: fade-opacity .5s ease-in-out 1.6s forwards;
 }
 
 #carbis-logo .beholder-text span:nth-child(3) {
-  letter-spacing: .27em;
+  letter-spacing: .15em;
 }
 
 @keyframes switch {
@@ -123,7 +123,7 @@ body {
 
   to {
     display: flex;
-    width: 12em;
+    width: 9.5em;
   }
 }
 
