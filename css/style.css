@@ -45,7 +45,7 @@ body {
   background-color: var(--basic-grey);
 
   
-  animation: switch-color .5s ease-in-out .2s forwards;
+  animation: switch-color .5s ease-in-out 1s forwards;
 }
 
 #carbis-logo .inner-block{
@@ -59,7 +59,7 @@ body {
 
   transition: all ease-in-out .5s;
 
-  animation: switch .5s ease-in-out .2s forwards;
+  animation: switch .5s ease-in-out 1s forwards;
 }
 
 #carbis-logo .beholder-text {
@@ -78,7 +78,7 @@ body {
   
   overflow: hidden;
 
-  animation: fade-block .5s ease-in-out .7s forwards;
+  animation: fade-block .5s ease-in-out 1.5s forwards;
 }
 
 #carbis-logo .beholder-text span{
@@ -94,7 +94,7 @@ body {
 
 #carbis-logo .beholder-text span:not(:nth-child(2)) {
   font-size: .6em;
-  animation: fade-opacity 1s ease-in-out 1.2s forwards;
+  animation: fade-opacity 1s ease-in-out 1.8s forwards;
   opacity: 0;
 }
 
@@ -105,7 +105,7 @@ body {
 #carbis-logo .beholder-text span:nth-child(2) {
   font-size: 2.8em;
   opacity: 0;
-  animation: fade-opacity .5s ease-in-out .7s forwards;
+  animation: fade-opacity .5s ease-in-out 1.2s forwards;
 }
 
 #carbis-logo .beholder-text span:nth-child(3) {
