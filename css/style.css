@@ -21,6 +21,8 @@ body {
   justify-content: flex-start;
 
   font-size: calc(5vw);
+
+  user-select: none;
 }
 
 #carbis-logo .base-block{
