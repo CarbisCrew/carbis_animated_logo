@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Museo sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/MuseoSansCyrl-700.woff) format('woff');
+}
+
+:root {
+  --basic-green: rgb(90, 174, 65);
+  --basic-white: white;
+  --basic-grey: #999;
+}
+
+body {
+  font-family: 'Museo sans', sans-serif;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 90vh;
+}
+
+#carbis-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  font-size: calc(5vw);
+}
+
+#carbis-logo .base-block{
+  box-sizing: border-box;
+
+  height: 3.5em;
+  width: 5em;
+  border-radius: .3em;
+
+  position: relative;
+
+  padding: .32em;
+
+  background-color: var(--basic-grey);
+
+  
+  animation: switch-color .5s ease-in-out .2s forwards;
+}
+
+#carbis-logo .inner-block{
+
+  box-sizing: border-box;
+
+  background-color: var(--basic-white);
+  height: 100%;
+  width: 2.6em;
+  border-radius: .3em;
+
+  transition: all ease-in-out .5s;
+
+  animation: switch .5s ease-in-out .2s forwards;
+}
+
+#carbis-logo .beholder-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-left: .8em;
+
+  width: 0;
+  transition: all ease-in-out .5s;
+  
+  overflow: hidden;
+
+  animation: fade-block .5s ease-in-out .7s forwards;
+}
+
+#carbis-logo .beholder-text span{
+  margin: 0;
+  padding: 0;
+  line-height: .9em;
+
+  white-space: nowrap;
+
+  transition: all ease-in-out .5;
+  transition-delay: 1s;
+}
+
+#carbis-logo .beholder-text span:not(:nth-child(2)) {
+  font-size: .6em;
+  animation: fade-opacity 1s ease-in-out 1.2s forwards;
+  opacity: 0;
+}
+
+#carbis-logo .beholder-text span:nth-child(1) {
+  letter-spacing: .42em;
+}
+
+#carbis-logo .beholder-text span:nth-child(2) {
+  font-size: 2.8em;
+  opacity: 0;
+  animation: fade-opacity .5s ease-in-out .7s forwards;
+}
+
+#carbis-logo .beholder-text span:nth-child(3) {
+  letter-spacing: .19em;
+}
+
+@keyframes switch {
+  form {
+    margin-left: 0;
+  } 
+  to {
+    margin-left: 1.7em;
+  } 
+}
+
+@keyframes switch-color {
+  form {
+    background-color: var(--basic-grey);
+  } 
+  to {
+    background-color: var(--basic-green);
+  } 
+}
+
+@keyframes fade-block {
+  from {
+    display: none;
+    width: 0;
+  }
+
+  to {
+    display: flex;
+    width: 10em;
+  }
+}
+
+@keyframes fade-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
