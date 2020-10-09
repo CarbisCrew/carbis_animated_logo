@@ -94,22 +94,22 @@ body {
 
 #carbis-logo .beholder-text span:not(:nth-child(2)) {
   font-size: .6em;
-  animation: fade-opacity 1s ease-in-out 1.8s forwards;
+  animation: fade-opacity 1s ease-in-out 2s forwards;
   opacity: 0;
 }
 
 #carbis-logo .beholder-text span:nth-child(1) {
-  letter-spacing: .42em;
+  letter-spacing: .55em;
 }
 
 #carbis-logo .beholder-text span:nth-child(2) {
   font-size: 2.8em;
   opacity: 0;
-  animation: fade-opacity .5s ease-in-out 1.2s forwards;
+  animation: fade-opacity .5s ease-in-out 1.6s forwards;
 }
 
 #carbis-logo .beholder-text span:nth-child(3) {
-  letter-spacing: .19em;
+  letter-spacing: .27em;
 }
 
 @keyframes switch {
@@ -138,7 +138,7 @@ body {
 
   to {
     display: flex;
-    width: 10em;
+    width: 12em;
   }
 }
 
